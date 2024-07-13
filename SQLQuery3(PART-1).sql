@@ -59,11 +59,11 @@ SELECT NAME,CITY INTO EMPLOYEE_DATA FROM EMPLOYEE WHERE 1=2
 SELECT *FROM EMPLOYEE_DATA
 
 --Create table Employee_info from Employee with no Data
-SELECT NAME,CITY INTO EMPLOYEE_INFO FROM EMPLOYEE WHERE 1=2
+SELECT NAME,CITY,age INTO EMPLOYEE_INFO FROM EMPLOYEE WHERE 1=2
 SELECT *FROM EMPLOYEE_INFO
+select * from employee
 
 --PART-C:-
---ERROR PART
 --Insert the Data into Employee_info from Employee whose CITY is Rajkot
 INSERT INTO EMPLOYEE_INFO SELECT *FROM EMPLOYEE WHERE CITY ='RAJKOT'
 --Insert the Data into Employee_info from Employee whose age is more than 32.
